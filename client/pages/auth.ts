@@ -111,9 +111,9 @@ customElements.define(
       .email{
           height:40px;
           font-size:22px;
-          background-color:#ECF0F1;
+          background-color:#000;
           border:0;
-          font-family:"Dosis";
+          font-family: 'Poppins', sans-serif;
       } 
       input[type=text]:focus {
         outline:none;
