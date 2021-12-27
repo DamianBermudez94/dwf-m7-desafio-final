@@ -39,20 +39,21 @@ customElements.define(
           height:40px;
           font-size:22px;
           background-color:#ECF0F1;
-          border:0;
-          font-family:"Dosis";
+          border:0; 
+          font-family: 'Poppins', sans-serif;
+         
       }    
        input[type=text]:focus {
            outline:none;
       }   
       .password-forget{
-          color:#40AFFF;
+          color:#000;
           margin-top:20px;
           text-align:center;
       }
       .response{
         margin-top:20px;
-        color:#ECF0F1;
+        color:#000;
         font-size:24px;
       }
     `;
@@ -63,7 +64,7 @@ customElements.define(
           <title-component>Ingresar</title-component>
           <form class="auth-form-password">
               <div class="item">
-                  <label class="label">CONTRASEÑA</label>
+                  <label class="label">CONTRASEÑA:</label>
                   <input type="text" name="password" class="password"/>        
                   <a href="" class="password-forget">OLVIDE MI CONTRASEÑA</a>
               </div>
@@ -125,7 +126,7 @@ customElements.define(
         <title-component>Ingresar</title-component>
         <form class="auth-form-email">
             <div class="item-input">
-                <label>EMAIL</label>
+                <label>EMAIL:</label>
                 <input type="text" name="email" class="email"/>        
             </div>
             <button-component color="#FF9DF5">Siguiente</button-component>
