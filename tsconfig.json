@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "target": "ESnext",
+        "module": "CommonJS",
+        "moduleResolution": "node",
+        "resolveJsonModule": true
+    },
+    "includes":["./be-src/**/*.ts"]
+}
+
+// Usamos el metodo includes: todos los archivos los transpilamos a javaScript y le pasamos la ruta de la carpeta
