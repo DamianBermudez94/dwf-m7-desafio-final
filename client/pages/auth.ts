@@ -102,6 +102,9 @@ customElements.define(
           margin-top:20px;
           color:#EDEDED;
       }
+      label{
+        color:#000;
+      }
       .item-input{
           display:flex;
           flex-direction:column;
@@ -111,7 +114,7 @@ customElements.define(
       .email{
           height:40px;
           font-size:22px;
-          background-color:#000;
+          background-color:#ECF0F1;
           border:0;
           font-family: 'Poppins', sans-serif;
       } 
