@@ -34,7 +34,7 @@ const app = express();
 app.use(express.json({ limit: "100mb" }));
 app.use(cors());
 
-app.get("/test", async (req, res) => {
+/*app.get("/test", async (req, res) => {
   const allUsers = await User.findAll();
 
   const allPets = await Pet.findAll();
@@ -42,7 +42,7 @@ app.get("/test", async (req, res) => {
   const allReports = await Report.findAll();
 
   res.json({ allUsers, allReports, allPets });
-});
+});*/
 
 //devuelve true si existe el mail
 app.get("/exist", async (req, res) => {
@@ -124,7 +124,7 @@ app.post("/pets/report", async (req, res) => {
 
   const msg = {
     to: email,
-    from: "bermudezdamian7@hotmail.com",
+    from: "bermudezdamian7@gmail.com",
     subject: `Una persona vio a ${capitalize(name)}!!!`,
     text: `Alguien vio a tu mascota perdida`,
     html: `<h1>${capitalize(reporter_name)} vio a tu mascota!</h1>
