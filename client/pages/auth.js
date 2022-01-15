@@ -97,6 +97,9 @@ customElements.define("auth-page", class extends HTMLElement {
           margin-top:20px;
           color:#EDEDED;
       }
+      label{
+        color:#000;
+      }
       .item-input{
           display:flex;
           flex-direction:column;
@@ -108,7 +111,7 @@ customElements.define("auth-page", class extends HTMLElement {
           font-size:22px;
           background-color:#ECF0F1;
           border:0;
-          font-family:"Dosis";
+          font-family: 'Poppins', sans-serif;
       } 
       input[type=text]:focus {
         outline:none;
