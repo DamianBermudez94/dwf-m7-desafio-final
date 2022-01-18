@@ -2,9 +2,11 @@
 import * as express from "express";
 import * as cors from "cors";
 import * as path from "path";
+import "dotenv/config";
 
 //Send grid
 import { sgMail } from "./lib/sendgrid";
+console.log("Soy la cuenta de sendgrid",sgMail)
 
 //Lodash
 import { capitalize } from "lodash";
@@ -12,8 +14,7 @@ import { capitalize } from "lodash";
 //Enviroment
 if (process.env.NODE_ENV !== "production") require("dotenv").config();
 
-//Models
-import { User, Pet, Report } from "./models";
+
 
 //Controllers
 import { UserController, PetController, ReportController } from "./controllers";
@@ -34,15 +35,7 @@ const app = express();
 app.use(express.json({ limit: "100mb" }));
 app.use(cors());
 
-/*app.get("/test", async (req, res) => {
-  const allUsers = await User.findAll();
 
-  const allPets = await Pet.findAll();
-
-  const allReports = await Report.findAll();
-
-  res.json({ allUsers, allReports, allPets });
-});*/
 
 //devuelve true si existe el mail
 app.get("/exist", async (req, res) => {

@@ -287,6 +287,10 @@ customElements.define(
             font-family: 'Poppins', sans-serif;
             margin-top:6px;
       }
+      .mapbox-button:hover{
+        background-color:#fff;
+        color:#0059ff;
+      }
    `;
 
       this.innerHTML = `
