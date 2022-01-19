@@ -6,7 +6,7 @@ import "dotenv/config";
 
 //Send grid
 import { sgMail } from "./lib/sendgrid";
-console.log("Soy la cuenta de sendgrid",sgMail)
+
 
 //Lodash
 import { capitalize } from "lodash";
