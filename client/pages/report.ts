@@ -100,7 +100,7 @@ customElements.define(
           font-size:24px;
           background-color:#ECF0F1;
           border:0;    
-          font-family:"Dosis";      
+          font-family: 'Poppins', sans-serif;    
       }
       .input-textarea{
           height:120px;
